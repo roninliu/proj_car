@@ -13,6 +13,7 @@ class IndexController extends Controller {
 			$login = A("Login");
 			$login -> login();	
 		}else{
+			$this->assign('nickname',session("login_user")["nickname"]);
 			$this->display("Index/Index");
 		}
 	}
