@@ -1,0 +1,37 @@
+/**
+ *	admin公用样式
+ * 
+ */
+
+@import url(framework.import.css);
+body{background:#ececec ;}
+.header{background:#4d7496 ; height: 50px; overflow: hidden;}
+.header .inner{width: 1200px; margin: 0 auto;}
+.header .inner:after{clear: both;content: ".";visibility: hidden;display: none;height: 0;font-size: 0;}
+.header .tools{float: right;color: #fff;}
+.header .tools .tools-item{color: #fff;display: inline-block;font-size: 12px;padding: 15px 5px; height: 20px;line-height: 20px;}
+.header .tools a{padding: 15px 10px; /*border-right: 1px solid #3d5c78;*/}
+.header .logo{float: left;height: 40px;padding: 5px 0;}
+.header .logo a{display:inline-block;height: 40px;width:41px;text-indent: -999em;background-image: url(../images/logo.png); vertical-align: middle;}
+.header .logo span{font-size: 16px;color: #fff;vertical-align: middle; margin-left: 8px;}
+
+.container{width: 1200px;margin: 0 auto;}
+.container:after{clear: both;display: none;visibility: hidden;content: ".";font-size: 0;height: 0;}
+.side{float: left; width: 220px;border: 1px solid #d1d1d1;background:#f9f9f9 ; margin-top: 15px;}
+
+.side .side-item a{display: block;padding: 6px 15px; color: #787878;}
+.side .side-item-title{font-size: 16px;font-weight:normal;border-top: 1px solid #f5f5f5;border-bottom: 1px solid #efefef;padding: 6px 15px; color: #787878;}
+.side .side-sub-item{padding: 5px 15px;}
+
+.main{float: left; border: 1px solid #D1D1D1; background: #F9F9F9; width: 961px;margin-left: 15px; margin-top: 15px;}
+
+
+/*home*/
+.home .bread{padding: 20px;}
+
+
+
+
+/*campany*/
+.info .content{padding: 20px 0;}
+.info .page-title{padding: 0 20px 10px 20px;border-bottom: 1px solid #D1D1D1; font-size: 16px;}

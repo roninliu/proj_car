@@ -39,4 +39,8 @@ class LoginController extends Controller {
 			break;
 		}
 	}
+	public function logout(){
+		session(null);
+		$this->display("Login/Login");
+	}
 }
