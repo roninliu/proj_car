@@ -87,8 +87,8 @@
 
 <div class="info">
 	<div class="content">
-		<div class="page-title">公司簡介</div>
-		<div class="page-content"></div>
+		<div class="page-title">公司簡介 <button>編輯</button></div>
+		<div class="page-content"><?php echo ($company["content"]); ?></div>
 	</div>
 </div>
 <!--内容区域结束-->
