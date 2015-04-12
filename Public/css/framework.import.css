@@ -1,2 +1,11 @@
 @charset "utf-8";
 @import url("reset.import.css");
+
+
+.inner{zoom:1;}
+.inner:after{display: block;clear: both;visibility: hidden;content: ".";font-size: 0;height: 0;}
+
+
+.txt-center{text-align: center;}
+
+.icon{display: inline-block;zoom:1;background-repeat: no-repeat;background-position: left top;vertical-align: middle;}
