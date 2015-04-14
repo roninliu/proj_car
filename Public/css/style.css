@@ -1,0 +1,8 @@
+/**
+ *	index样式
+ * 
+ */
+@import url(home.framework.import.css);
+
+.side{width: 200px;float: left; margin-top: 30px;}
+.main{width: 900px;float: left;margin-top: 30px;}

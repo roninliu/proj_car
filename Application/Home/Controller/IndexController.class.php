@@ -6,4 +6,9 @@ class IndexController extends Controller {
 	public function index() {
 		$this->display("Index/Index");
 	}
+	
+	public function about(){
+		
+		$this -> display("About/About");
+	}
 }

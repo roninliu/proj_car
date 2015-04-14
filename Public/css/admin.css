@@ -3,7 +3,7 @@
  * 
  */
 
-@import url(framework.import.css);
+@import url(admin.framework.import.css);
 body{background:#ececec ;}
 .header{background:#4d7496 ; height: 50px; overflow: hidden;}
 .header .inner{width: 1200px; margin: 0 auto;}
