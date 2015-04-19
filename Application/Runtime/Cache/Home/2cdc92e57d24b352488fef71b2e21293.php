@@ -46,7 +46,7 @@
 			<div class="inner">
  
 <div class="bread">
-		<a href="#">关于我们</a>》<span><?php echo ($data["title"]); ?></span>
+		<a href="#">关于我们</a>》<span><?php echo ($current["name"]); ?></span>
 	</div>
 <div class="side">
 	<div class="menu">
@@ -60,8 +60,17 @@
 </div>
 <div class="main">
 	<div class="content">
-		<div class="hd"><?php echo ($data["title"]); ?></div>
-		<div class="bd about"><?php echo ($data["content"]); ?></div>
+		<div class="hd"><?php echo ($current["name"]); ?></div>
+		<div class="bd">
+			<ul class="newslist">
+				<li>
+					<span class="type">11</span>
+					<a href="" class="title">22</a>
+					<span class="hot">333</span>
+					<span class="datetime">444</span>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>
 <script type="text/javascript">

@@ -4,5 +4,28 @@
  */
 @import url(home.framework.import.css);
 
-.side{width: 200px;float: left; margin-top: 30px;}
-.main{width: 900px;float: left;margin-top: 30px;}
+.side{width: 200px;float: left; margin-top: 10px;}
+.side .menu{border: 1px solid #D2D2D2;background: #fff;}
+.side .menu .hd{font-size: 16px;padding: 10px;background: url(../images/zxdl2.png) no-repeat 8px bottom; border-bottom: 1px solid #d2d2d2;}
+.side .menu .bd{padding: 10px 5px 20px 5px;}
+.side .menu .bd li{ padding: 5px 30px;}
+.side .menu .bd li a{display: block; padding: 5px 10px;border-bottom: 1px dashed #d2d2d2;}
+.side .menu .bd li a:hover,
+.side .menu .bd li.select a{text-decoration: none;background: #9B410E;color: #fff;}
+.main{width: 1000px;float: left;margin-top: 10px;}
+.bread{padding: 10px;clear: both;}
+.bread a{padding-right: 5px;}
+.bread span{padding-left: 5px;}
+.content{padding:0px 0px 10px 20px ;}
+.content .hd{border: 1px solid #D2D2D2;background:url(../images/nav-left.png) left center no-repeat #FFFFFF; padding: 10px 10px 10px 20px;font-size: 15px;}
+.content .bd{border: 1px solid #D2D2D2; background: #fff; border-top: none;padding: 10px;}
+.content .bd .newslist{padding: 20px;}
+.content .bd .newslist li{margin:5px; border-bottom: 1px dashed #D2D2D2; padding: 5px 10px;}
+.content .bd .newslist .type{padding-right: 10px;}
+.content .bd .newslist .datetime{padding-left: 10px;;}
+.content .bd .newslist .hot{color: #F60200;}
+.content .bd .news-title{font-size: 22px; text-align: center; padding: 10px 20px;}
+.content .bd .news-info{padding: 8px 0; color: #4D7496; text-align: center;}
+.content .bd .news-content{padding: 20px;}
+.content .about{line-height: 24px; padding: 30px;}
+

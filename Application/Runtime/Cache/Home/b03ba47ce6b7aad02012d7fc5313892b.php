@@ -24,7 +24,7 @@
 					<a href="/proj_car/index.php" class="nav-item"><i class="icon icon-home"></i>网站首页</a>
 					<a href="/proj_car/index.php/cars/index?menu=2" class="nav-item"><i class="icon icon-car"></i>车辆租赁</a>
 					<a href="/proj_car/index.php/travel/index?menu=3" class="nav-item"><i class="icon icon-ly"></i>旅游推荐</a>
-					<a href="/proj_car/index.php/news/index?menu=4" class="nav-item"><i class="icon icon-zixun"></i>最新资讯</a>
+					<a href="/proj_car/index.php/news/index?menu=4" class="nav-item"><i class="icon icon-zixun"></i>最新咨询</a>
 					<a href="/proj_car/index.php/about/index?menu=5" class="nav-item"><i class="icon icon-about"></i>关于我们</a>
 				</div>
 			</div>
@@ -46,29 +46,27 @@
 			<div class="inner">
  
 <div class="bread">
-		<a href="#">关于我们</a>》<span><?php echo ($data["title"]); ?></span>
+		<a href="#">关于我们</a>》<span>公司简介</span>
 	</div>
 <div class="side">
 	<div class="menu">
 		<div class="hd">关于我们</div>
 		<div class="bd">
-			<ul id="subNav">
-				<?php if(is_array($nav)): $i = 0; $__LIST__ = $nav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navItem): $mod = ($i % 2 );++$i;?><li data-id="<?php echo ($navItem["id"]); ?>"><a href="/proj_car/index.php/about/index?menu=<?php echo ($navItem["parent"]); ?>&sub=<?php echo ($navItem["id"]); ?>"><?php echo ($navItem["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+			<ul>
+				<li class="select"><a href="/proj_car/index.php/about/index">公司简介</a></li>
+				<li><a href="/proj_car/index.php/about/qualification">公司资质</a></li>
+				<li><a href="/proj_car/index.php/about/jzairport">九寨沟机场</a></li>
+				<li><a href="/proj_car/index.php/about/hyairport">红原机场</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 <div class="main">
 	<div class="content">
-		<div class="hd"><?php echo ($data["title"]); ?></div>
-		<div class="bd about"><?php echo ($data["content"]); ?></div>
+		<div class="hd">公司简介</div>
+		<div class="bd">这里是公司简介</div>
 	</div>
 </div>
-<script type="text/javascript">
-	seajs.use("/proj_car/Public/js/home/about", function(app) {
-		app.init();
-	})
-</script>
 </div>
 </div>
 <div class="footer">

@@ -46,29 +46,50 @@
 			<div class="inner">
  
 <div class="bread">
-		<a href="#">关于我们</a>》<span><?php echo ($data["title"]); ?></span>
-	</div>
+	<a href="#">最新资讯</a>》<span>资讯列表</span>
+</div>
 <div class="side">
 	<div class="menu">
-		<div class="hd">关于我们</div>
+		<div class="hd">最新资讯</div>
 		<div class="bd">
-			<ul id="subNav">
-				<?php if(is_array($nav)): $i = 0; $__LIST__ = $nav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navItem): $mod = ($i % 2 );++$i;?><li data-id="<?php echo ($navItem["id"]); ?>"><a href="/proj_car/index.php/about/index?menu=<?php echo ($navItem["parent"]); ?>&sub=<?php echo ($navItem["id"]); ?>"><?php echo ($navItem["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+			<ul>
+				<li class="select"><a href="/proj_car/index.php/about/index">公司新闻</a>
+				</li>
+				<li><a href="/proj_car/index.php/about/qualification">最新活动</a>
+				</li>
+				<li><a href="/proj_car/index.php/about/jzairport">特价推荐</a>
+				</li>
 			</ul>
 		</div>
 	</div>
 </div>
 <div class="main">
 	<div class="content">
-		<div class="hd"><?php echo ($data["title"]); ?></div>
-		<div class="bd about"><?php echo ($data["content"]); ?></div>
+		<div class="hd">公司简介</div>
+		<div class="bd">
+			<ul class="newslist">
+				<li>
+					<span class="type">[最新新闻]</span>
+					<a href="/proj_car/index.php/news/getcontent" class="title">我时间哦西欧你维吾尔</a>
+					<span class="hot">[Hot]</span>
+					<span class="datetime">2015-01-02</span>
+				</li>
+				<li>
+					<span class="type">[最新新闻]</span>
+					<a href="" class="title">我时间哦西欧你维吾尔</a>
+					<span class="hot">[Hot]</span>
+					<span class="datetime">2015-01-02</span>
+				</li>
+				<li>
+					<span class="type">[最新新闻]</span>
+					<a href="" class="title">我时间哦西欧你维吾尔</a>
+					<span class="hot">[Hot]</span>
+					<span class="datetime">2015-01-02</span>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>
-<script type="text/javascript">
-	seajs.use("/proj_car/Public/js/home/about", function(app) {
-		app.init();
-	})
-</script>
 </div>
 </div>
 <div class="footer">

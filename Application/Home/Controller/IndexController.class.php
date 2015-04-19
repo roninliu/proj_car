@@ -4,11 +4,11 @@ use Think\Controller;
 
 class IndexController extends Controller {
 	public function index() {
-		$this->display("Index/Index");
+		$aboutService = D("About","Service");
+		$aboutInfo = $aboutService -> getHomeInfo();
+		//dump($aboutInfo);
+		$this -> assign("ts",$aboutInfo);
+		$this->display("Index");
 	}
 	
-	public function about(){
-		
-		$this -> display("About/About");
-	}
 }

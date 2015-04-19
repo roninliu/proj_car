@@ -67,22 +67,16 @@
 	<div class="hd">特色服务</div>
 	<div class="bd">
 		<ul>
-			<li>
+			<volist name="ts" id="tsItem">
+				<li>
 				<div class="ly-hot">
-					<a href="#">
-						<img src="http://fakeimg.pl/325x120/?text=Hot Image">
+					<a href="__ROOT__/index.php/about/index?menu=5&sub={$tsItem.c_id}">
+						<img src="{$tsItem.img}">
 					</a>
-					<a href="#" class="hot-name">紅原機場</a>
+					<a href="__ROOT__/index.php/about/index?menu=5&sub={$tsItem.c_id}" class="hot-name">{$tsItem.title}</a>
 				</div>
-			</li>
-			<li>
-				<div class="ly-hot">
-					<a href="#">
-						<img src="http://fakeimg.pl/325x120/?text=Hot Image">
-					</a>
-					<a href="#" class="hot-name">九寨溝機場</a>
-				</div>
-			</li>
+			</li>	
+			</volist>
 		</ul>
 	</div>
 </div>
