@@ -12,9 +12,9 @@ class NewsController extends Controller {
 		if($currentId == null){
 			$currentId = $nav[0]["id"];	
 		}
+		
 		$result = $newsService -> getContentById($currentId);
 		$currentNav = $categoryService -> getNavById($currentId);
-		dump($result);
 		$this-> assign("current",$currentNav);
 		$this -> assign("page",$currentId);
 		$this -> assign("nav", $nav);
@@ -22,7 +22,26 @@ class NewsController extends Controller {
 		$this->display("News/NewsList");
 	}
 	public function getContent(){
-		$this -> display("Info/NewsContent");
+		$type = I("menu");
+		$currentId = I("sub");
+		$page= I("page");
+		$categoryService = D("Category", "Service");
+		$newsService = D("News", 'Service');
+		$nav = $categoryService -> getNavByMenu($type);
+		if($currentId == null){
+			$currentId = $nav[0]["id"];	
+		}
+		$result = $newsService -> getNewsInfo($page);
+		$currentNav = $categoryService -> getNavById($currentId);
+		
+		//dump($result);
+		
+		$this-> assign("current",$currentNav);
+		$this -> assign("page",$currentId);
+	
+		$this -> assign("nav", $nav);
+		$this -> assign("data", $result);
+		$this -> display("News/News");
 	}
 	
 }

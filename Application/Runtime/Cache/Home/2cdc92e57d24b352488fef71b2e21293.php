@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?>
 <!doctype html>
-<html>
+<html lang="zh">
 
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="edge">
@@ -46,14 +46,15 @@
 			<div class="inner">
  
 <div class="bread">
-		<a href="#">关于我们</a>》<span><?php echo ($current["name"]); ?></span>
-	</div>
+	<a href="/proj_car/index.php/news/index?menu=4">最新资讯</a>》<span><?php echo ($current["name"]); ?></span>
+</div>
 <div class="side">
 	<div class="menu">
-		<div class="hd">关于我们</div>
+		<div class="hd">最新资讯</div>
 		<div class="bd">
 			<ul id="subNav">
-				<?php if(is_array($nav)): $i = 0; $__LIST__ = $nav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navItem): $mod = ($i % 2 );++$i;?><li data-id="<?php echo ($navItem["id"]); ?>"><a href="/proj_car/index.php/about/index?menu=<?php echo ($navItem["parent"]); ?>&sub=<?php echo ($navItem["id"]); ?>"><?php echo ($navItem["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+				<?php if(is_array($nav)): $i = 0; $__LIST__ = $nav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navItem): $mod = ($i % 2 );++$i;?><li data-id="<?php echo ($navItem["id"]); ?>"><a href="/proj_car/index.php/news/index?menu=<?php echo ($navItem["parent"]); ?>&sub=<?php echo ($navItem["id"]); ?>"><?php echo ($navItem["name"]); ?></a>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 		</div>
 	</div>
@@ -63,12 +64,14 @@
 		<div class="hd"><?php echo ($current["name"]); ?></div>
 		<div class="bd">
 			<ul class="newslist">
-				<li>
-					<span class="type">11</span>
-					<a href="" class="title">22</a>
-					<span class="hot">333</span>
-					<span class="datetime">444</span>
-				</li>
+				<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$dataItem): $mod = ($i % 2 );++$i;?><li>
+						<span class="type">[ <?php echo ($dataItem["name"]); ?> ]</span>
+						<a href="/proj_car/index.php/news/getcontent?menu=<?php echo ($dataItem["parent"]); ?>&sub=<?php echo ($current["id"]); ?>&page=<?php echo ($dataItem["id"]); ?>" class="title"><?php echo ($dataItem["title"]); ?></a>
+
+						<?php if($dataItem['is_hot'] == 1 ): ?><span class="hot">Hot</span><?php endif; ?>
+
+						<span class="datetime"><?php echo ($dataItem["datatime"]); ?></span>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 		</div>
 	</div>
@@ -82,7 +85,7 @@
 </div>
 <div class="footer">
 	<p>
-		<a href="#">关于我们</a> |
+		<a href="/proj_car/index.php/about/index?menu=5&sub=6">关于我们</a> |
 		<a href="">服务条款</a> |
 		<a href="">租车细则</a> |
 		<a href="">隐私条款</a>

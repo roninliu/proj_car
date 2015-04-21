@@ -12,7 +12,7 @@ class AboutService extends Model {
 		}
 	}
 	
-	public function getHomeInfo(){
+	public function getHotList(){
 		$aboutModel = M("About");
 		try{
 			$jzResult = $aboutModel -> where("id=3") -> find();

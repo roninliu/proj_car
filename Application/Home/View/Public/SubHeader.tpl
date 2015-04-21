@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="zh">
 
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="edge">

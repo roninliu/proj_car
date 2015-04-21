@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?>
 <!doctype html>
-<html>
+<html lang="zh">
 
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="edge">
@@ -11,6 +11,8 @@
 		<title>阿坝州福达汽车租赁有限公司</title>
 		<link rel="stylesheet" type="text/css" href="/proj_car/Public/css/index.css">
 		<script src="/proj_car/Public/lib/jquery-2.1.0.min.js"></script>
+		<script src="/proj_car/Public/lib/jquery-ui.min.js"></script>
+		<script src="/proj_car/Public/lib/jquery.ui.datepicker-zh-CN.js"></script>
 		<script src="/proj_car/Public/lib/responsiveslides.min.js"></script>
 		<script src="/proj_car/Public/lib/sea.js"></script>
 	</head>
@@ -70,11 +72,11 @@
 			</li>
 			<li>
 				<label for="">取车时间</label>
-				<input type="text">
+				<input type="text" id="getdatepicker">
 			</li>
 			<li>
 				<label for="">还车时间</label>
-				<input type="text">
+				<input type="text" id="overdatepicker">
 			</li>
 			<li><a href="#" class="select-btn">去选车</a>
 			</li>
@@ -87,85 +89,74 @@
 <div class="news">
 	<div class="hd">最新动态</div>
 	<div class="bd">
-		<div class="news-hot">
-			<div class="hot-img">
-				<a href="#">
-					<img src="http://fakeimg.pl/200x100/?text=Hot Image">
-				</a>
-			</div>
-			<h4 class="hot-title">[最新活動] <a href="#">我的鎖定蘇打水的</a></h4>
-			<p class="hot-content"><a href="#">老版官网停用通知老版官网停用通知老版官网停用通知 老版官网停用通知老版官网停用通知 老版官网停用通知老版官网停用通知老版官网停用通知老版官网停用通知老版官网停用通知老版官网停用通知老版官网停用通知老版官网停用通知老版官网停用通知老版官网停用通知 </a>
+		<?php if(is_array($news)): $i = 0; $__LIST__ = array_slice($news,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$newsItem): $mod = ($i % 2 );++$i;?><div class="news-hot">
+				<div class="hot-img">
+					<?php if($newsItem["parent"] == 3 ): ?><a href="/proj_car/index.php/travel/getcontent?menu=<?php echo ($newsItem["parent"]); ?>&sub=<?php echo ($newsItem["c_id"]); ?>&page=<?php echo ($newsItem["id"]); ?>">
+					<?php else: ?>
+						<a href="/proj_car/index.php/news/getcontent?menu=<?php echo ($newsItem["parent"]); ?>&sub=<?php echo ($newsItem["c_id"]); ?>&page=<?php echo ($newsItem["id"]); ?>"><?php endif; ?>
+					<img src="<?php echo ($newsItem["img"]); ?>">
+					</a>
+				</div>
+				<h4 class="hot-title">[<?php echo ($newsItem["name"]); ?>] 
+					<?php if($newsItem["parent"] == 3 ): ?><a href="/proj_car/index.php/travel/getcontent?menu=<?php echo ($newsItem["parent"]); ?>&sub=<?php echo ($newsItem["c_id"]); ?>&page=<?php echo ($newsItem["id"]); ?>">
+					<?php else: ?>
+						<a href="/proj_car/index.php/news/getcontent?menu=<?php echo ($newsItem["parent"]); ?>&sub=<?php echo ($newsItem["c_id"]); ?>&page=<?php echo ($newsItem["id"]); ?>"><?php endif; ?>
+					<?php echo ($newsItem["title"]); ?></a>
+				</h4>
+				<div class="hot-content">
+					<?php if($newsItem["parent"] == 3 ): ?><a href="/proj_car/index.php/travel/getcontent?menu=<?php echo ($newsItem["parent"]); ?>&sub=<?php echo ($newsItem["c_id"]); ?>&page=<?php echo ($newsItem["id"]); ?>">
+					<?php else: ?>
+						<a href="/proj_car/index.php/news/getcontent?menu=<?php echo ($newsItem["parent"]); ?>&sub=<?php echo ($newsItem["c_id"]); ?>&page=<?php echo ($newsItem["id"]); ?>"><?php endif; ?>
+					<?php echo ($newsItem["content"]); ?></a>
+				</div>
 			</p>
-		</div>
+		</div><?php endforeach; endif; else: echo "" ;endif; ?>
+		
 		<div class="news-list">
 			<ul>
-				<li><span class="type">[最新資訊]</span><a href="" class="title">實得分數地方士大夫實得分數地方士大夫實得分數地方士大夫實得分數地方士大夫實得分數地方士大夫實得分數地方士大夫實得分數地方士大夫實得分數地方士大夫</a>
-				</li>
-				<li><span class="type">[特價活動]</span><a href="" class="title">實得分數地方士大夫</a>
-				</li>
-				<li><span class="type">[旅遊推薦]</span><a href="" class="title">鎖定實得分數</a>
-				</li>
-				<li><span class="type">[最新資訊]</span><a href="" class="title">aaaaa</a>
-				</li>
-				<li><span class="type">[特價活動]</span><a href="" class="title">實得分數地方士大夫</a>
-				</li>
-				<li><span class="type">[旅遊推薦]</span><a href="" class="title">鎖定實得分數</a>
-				</li>
-				<li><span class="type">[最新資訊]</span><a href="" class="title">aaaaa</a>
-				</li>
-				<li><span class="type">[特價活動]</span><a href="" class="title">實得分數地方士大夫</a>
-				</li>
+				<?php if(is_array($news)): $i = 0; $__LIST__ = array_slice($news,1,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$newsItem): $mod = ($i % 2 );++$i;?><li><span class="type">[<?php echo ($newsItem["name"]); ?>]</span>
+						<?php if($newsItem["parent"] == 3 ): ?><a href="/proj_car/index.php/travel/getcontent?menu=<?php echo ($newsItem["parent"]); ?>&sub=<?php echo ($newsItem["c_id"]); ?>&page=<?php echo ($newsItem["id"]); ?>">
+					<?php else: ?>
+						<a href="/proj_car/index.php/news/getcontent?menu=<?php echo ($newsItem["parent"]); ?>&sub=<?php echo ($newsItem["c_id"]); ?>&page=<?php echo ($newsItem["id"]); ?>"><?php endif; ?>
+					<?php echo ($newsItem["title"]); ?></a>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
+		</ul>
+		</div>
+		</div>
+	</div>
+	<div class="ly">
+		<div class="hd">特色服务</div>
+		<div class="bd">
+			<ul>
+				<?php if(is_array($ts)): $i = 0; $__LIST__ = $ts;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tsItem): $mod = ($i % 2 );++$i;?><li>
+						<div class="ly-hot">
+							<a href="/proj_car/index.php/about/index?menu=5&sub=<?php echo ($tsItem["c_id"]); ?>">
+								<img src="<?php echo ($tsItem["img"]); ?>">
+							</a>
+							<a href="/proj_car/index.php/about/index?menu=5&sub=<?php echo ($tsItem["c_id"]); ?>" class="hot-name"><?php echo ($tsItem["title"]); ?></a>
+						</div>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
+			</ul>
+		</div>
+	</div>
+	<div class="hot">
+		<div class="hd">热门景点</div>
+		<div class="bd">
+			<ul>
+				<?php if(is_array($hot)): $i = 0; $__LIST__ = $hot;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$hotItem): $mod = ($i % 2 );++$i;?><li>
+						<a href="/proj_car/index.php/travel/getcontent?menu=<?php echo ($hotItem["parent"]); ?>&sub=<?php echo ($hotItem["c_id"]); ?>&page=<?php echo ($hotItem["id"]); ?>">
+							<img src="<?php echo ($hotItem["img"]); ?>" alt="<?php echo ($hotItem["title"]); ?>">
+						</a>
+						<a href=""><?php echo ($hotItem["title"]); ?></a>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 		</div>
 	</div>
 </div>
-<div class="ly">
-	<div class="hd">特色服务</div>
-	<div class="bd">
-		<ul>
-			<?php if(is_array($ts)): $i = 0; $__LIST__ = $ts;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tsItem): $mod = ($i % 2 );++$i;?><li>
-				<div class="ly-hot">
-					<a href="/proj_car/index.php/about/index?menu=5&sub=<?php echo ($tsItem["c_id"]); ?>">
-						<img src="<?php echo ($tsItem["img"]); ?>">
-					</a>
-					<a href="/proj_car/index.php/about/index?menu=5&sub=<?php echo ($tsItem["c_id"]); ?>" class="hot-name"><?php echo ($tsItem["title"]); ?></a>
-				</div>
-			</li><?php endforeach; endif; else: echo "" ;endif; ?>
-		</ul>
-	</div>
-</div>
-<div class="hot">
-	<div class="hd">热门景点</div>
-	<div class="bd">
-		<ul>
-			<li class="first">
-				<a href="">
-					<img src="http://fakeimg.pl/260x200/?text=Hot Image" alt="">
-				</a><a href="">黃河第一灣</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="http://fakeimg.pl/260x200/?text=Hot Image" alt="">
-				</a><a href="">壤塘縣</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="http://fakeimg.pl/260x200/?text=Hot Image" alt="">
-				</a><a href="">木格措</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="http://fakeimg.pl/260x200/?text=Hot Image" alt="">
-				</a><a href="">九寨山水</a>
-			</li>
-		</ul>
-	</div>
-</div>
-</div>
 </div>
 
 <script>
-	seajs.use("/proj_car/Public/js/index", function(app) {
+	seajs.use("/proj_car/Public/js/home/index", function(app) {
 		app.init();
 	})
 </script>
@@ -173,7 +164,7 @@
 </div>
 <div class="footer">
 	<p>
-		<a href="#">关于我们</a> |
+		<a href="/proj_car/index.php/about/index?menu=5&sub=6">关于我们</a> |
 		<a href="">服务条款</a> |
 		<a href="">租车细则</a> |
 		<a href="">隐私条款</a>

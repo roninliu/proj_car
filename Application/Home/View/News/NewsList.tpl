@@ -1,14 +1,15 @@
 <layout name="Layout/SingleLayout" />
 <div class="bread">
-		<a href="#">关于我们</a>》<span>{$current.name}</span>
-	</div>
+	<a href="__ROOT__/index.php/news/index?menu=4">最新资讯</a>》<span>{$current.name}</span>
+</div>
 <div class="side">
 	<div class="menu">
-		<div class="hd">关于我们</div>
+		<div class="hd">最新资讯</div>
 		<div class="bd">
 			<ul id="subNav">
 				<volist name="nav" id="navItem">
-					<li data-id="{$navItem.id}"><a href="__ROOT__/index.php/about/index?menu={$navItem.parent}&sub={$navItem.id}">{$navItem.name}</a></li>
+					<li data-id="{$navItem.id}"><a href="__ROOT__/index.php/news/index?menu={$navItem.parent}&sub={$navItem.id}">{$navItem.name}</a>
+					</li>
 				</volist>
 			</ul>
 		</div>
@@ -19,12 +20,18 @@
 		<div class="hd">{$current.name}</div>
 		<div class="bd">
 			<ul class="newslist">
-				<li>
-					<span class="type">11</span>
-					<a href="" class="title">22</a>
-					<span class="hot">333</span>
-					<span class="datetime">444</span>
-				</li>
+				<volist name="data" id="dataItem">
+					<li>
+						<span class="type">[ {$dataItem.name} ]</span>
+						<a href="__ROOT__/index.php/news/getcontent?menu={$dataItem.parent}&sub={$current.id}&page={$dataItem.id}" class="title">{$dataItem.title}</a>
+
+						<if condition="$dataItem['is_hot'] eq 1 ">
+							<span class="hot">Hot</span>
+						</if>
+
+						<span class="datetime">{$dataItem.datatime}</span>
+					</li>
+				</volist>
 			</ul>
 		</div>
 	</div>

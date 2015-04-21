@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?>
 <!doctype html>
-<html>
+<html lang="zh">
 
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="edge">
@@ -46,7 +46,7 @@
 			<div class="inner">
  
 <div class="bread">
-		<a href="#">关于我们</a>》<span><?php echo ($data["title"]); ?></span>
+		<a href="/proj_car/index.php/about/index?menu=5">关于我们</a>》<span><?php echo ($data["title"]); ?></span>
 	</div>
 <div class="side">
 	<div class="menu">
@@ -73,7 +73,7 @@
 </div>
 <div class="footer">
 	<p>
-		<a href="#">关于我们</a> |
+		<a href="/proj_car/index.php/about/index?menu=5&sub=6">关于我们</a> |
 		<a href="">服务条款</a> |
 		<a href="">租车细则</a> |
 		<a href="">隐私条款</a>

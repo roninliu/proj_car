@@ -1,6 +1,6 @@
 <layout name="Layout/SingleLayout" />
 <div class="bread">
-		<a href="#">关于我们</a>》<span>{$data.title}</span>
+		<a href="__ROOT__/index.php/about/index?menu=5">关于我们</a>》<span>{$data.title}</span>
 	</div>
 <div class="side">
 	<div class="menu">
