@@ -3,6 +3,7 @@
  * 
  */
 @import url(home.framework.import.css);
+@import url("jquery-ui.min.css");
 
 .side{width: 200px;float: left; margin-top: 10px;}
 .side .menu{border: 1px solid #D2D2D2;background: #fff;}
@@ -28,4 +29,31 @@
 .content .bd .news-info{padding: 8px 0; color: #4D7496; text-align: center;}
 .content .bd .news-content{padding: 20px;}
 .content .about{line-height: 24px; padding: 30px;}
+
+.car-content{padding: 20px 0;zoom:1}
+.car-content:after{display: block;clear: both;visibility: hidden;content: ".";font-size: 0;height: 0;}
+.car-main{float: left;width: 896px; border: 1px solid #D2D2D2; background: #fff; padding: 20px;}
+.car-side{float: left;width: 200px; margin-left: 20px; border: 1px solid #D2D2D2; padding: 20px; background: #fff;}
+.car-content .filter{border:1px solid #D2D2D2; background:#F5F5F5; padding: 10px;}
+.car-content .filter label{font-size:14px;margin-right:8px;}
+.car-content .filter .data-ipt{line-height:22px;width:160px;height:22px;border:1px solid #ccc;}
+
+.car-content .car-list{padding:0px 0 20px 0; border-top: 5px solid #B81900; margin-top: 20px;clear: both;}
+.car-list li{zoom:1;clear: both; padding: 15px 0;border-bottom: 1px dashed #E78F08;}
+.car-list li:after{display: block;clear: both;visibility: hidden;content: ".";font-size: 0;height: 0;}
+.car-list li .car-img{float: left; width: 200px;height: 150px; overflow: hidden;}
+.car-list li .car-img img{vertical-align: top; width: 200px;height: 150px;}
+.car-list li .car-info{float: left; text-align: center;width: 300px; padding-top: 25px;}
+.car-list li .car-info .car-name{font-size: 20px; padding: 8px 0; color: #B81900;}
+.car-list li .car-info .car-desc{font-size: 14px; color: #CCCCCC;padding: 4px 0;}
+.car-list li .car-price{float: left; text-align: center;width: 296px; padding: 45px 0;}
+.car-list li .car-price .new-price{font-size: 24px;color: #CD0A0A; padding: 5px 0;}
+.car-list li .car-price .old-price{font-size: 14px; color:#ccc; text-decoration: line-through;}
+.car-list li .order{float: left;}
+.car-list li .order 
+
+
+
+
+
 

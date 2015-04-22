@@ -3,26 +3,29 @@
 <div class="quick">
 	<div class="quick-hd">快捷预定车辆</div>
 	<div class="quick-bd">
+		<form action="__ROOT__/index.php/cars/selectcars" method="POST">
 		<ul>
 			<li>
-				<label for="">取车地点</label>
-				<select name="" id="">
-					<option value="">---请选择取车地点---</option>
-					<option value="">九寨沟机场</option>
-					<option value="">红原机场</option>
+				<label for="js_area">取车地点</label>
+				<select name="address" id="js_area">
+					<option value="0">---请选择取车地点---</option>
+					<option value="1">九寨沟机场</option>
+					<option value="2">红原机场</option>
+					<option value="3">门店自取</option>
 				</select>
 			</li>
 			<li>
-				<label for="">取车时间</label>
-				<input type="text" id="getdatepicker">
+				<label for="getdatepicker">取车时间</label>
+				<input type="text" id="getdatepicker" name="start" placeholder="请选择取车时间">
 			</li>
 			<li>
 				<label for="">还车时间</label>
-				<input type="text" id="overdatepicker">
+				<input type="text" id="overdatepicker" name="end" placeholder="请选择还车时间">
 			</li>
-			<li><a href="#" class="select-btn">去选车</a>
+			<li><button type="submit" class="select-btn">去选车</button>
 			</li>
 		</ul>
+		</form>
 	</div>
 	<div class="quick-ft">
 		<img src="http://fakeimg.pl/250x100/?text=Hot Image">

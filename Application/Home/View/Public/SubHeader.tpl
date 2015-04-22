@@ -10,6 +10,7 @@
 		<title>阿坝州福达汽车租赁有限公司</title>
 		<link rel="stylesheet" type="text/css" href="__ROOT__/Public/css/style.css">
 		<script src="__ROOT__/Public/lib/jquery-2.1.0.min.js"></script>
+		<script src="__ROOT__/Public/lib/jquery-ui.min.js"></script>
 		<script src="__ROOT__/Public/lib/sea.js"></script>
 	</head>
 

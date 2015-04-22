@@ -5,7 +5,7 @@ body{background:url(../images/c-bg.png) repeat left top;}
 a{color: #3671BA;}
 
 .inner{zoom:1;}
-.inner:after{display: block;clear: both;visibility: hidden;content: ".";font-size: 0;height: 0;}
+.inner:after{display:block;clear: both;visibility: hidden;content: ".";font-size: 0;height: 0;}
 
 
 .txt-center{text-align: center;}
