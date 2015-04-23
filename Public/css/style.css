@@ -33,10 +33,16 @@
 .car-content{padding: 20px 0;zoom:1}
 .car-content:after{display: block;clear: both;visibility: hidden;content: ".";font-size: 0;height: 0;}
 .car-main{float: left;width: 896px; border: 1px solid #D2D2D2; background: #fff; padding: 20px;}
-.car-side{float: left;width: 200px; margin-left: 20px; border: 1px solid #D2D2D2; padding: 20px; background: #fff;}
-.car-content .filter{border:1px solid #D2D2D2; background:#F5F5F5; padding: 10px;}
+.car-side{float: left;width: 200px; margin-left: 20px; border: 1px solid #D2D2D2; padding:0 20px 20px 20px; background: #fff;}
+.car-content .filter{border:1px solid #D2D2D2; background:#F5F5F5; padding: 15px; font-size: 12px;}
 .car-content .filter label{font-size:14px;margin-right:8px;}
-.car-content .filter .data-ipt{line-height:22px;width:160px;height:22px;border:1px solid #ccc;}
+.car-content .filter .data-ipt{line-height:22px;width:160px;height:22px;border:1px solid #ccc; padding: 1px 4px 1px 5px; font-size: 12px;}
+.car-content .filter li{padding: 8px 0;}
+.car-content .filter .time-area{border-bottom: 1px dotted #FE7C7C; padding: 0 0 15px 0;}
+.car-content .filter li label{vertical-align: middle;}
+.car-content .filter li label input{vertical-align: middle;;margin-left: 10px;}
+.comfirm-btn{display: inline-block;zoom:1;background-color: #e65901;border-radius: 4px; padding: 5px 25px;font-size: 14px;color: #fff;}
+.comfirm-btn:hover{text-decoration: none;background-color: #FE7C7C;}
 
 .car-content .car-list{padding:0px 0 20px 0; border-top: 5px solid #B81900; margin-top: 20px;clear: both;}
 .car-list li{zoom:1;clear: both; padding: 15px 0;border-bottom: 1px dashed #E78F08;}
@@ -49,11 +55,15 @@
 .car-list li .car-price{float: left; text-align: center;width: 296px; padding: 45px 0;}
 .car-list li .car-price .new-price{font-size: 24px;color: #CD0A0A; padding: 5px 0;}
 .car-list li .car-price .old-price{font-size: 14px; color:#ccc; text-decoration: line-through;}
-.car-list li .order{float: left;}
-.car-list li .order 
+.car-list li .order{float: left; padding: 60px 0;;}
 
 
 
-
-
-
+.car-content .car-side .hd{background: url(../images/zxdl2.png) no-repeat left bottom; font-size: 16px;color: #E65901;padding: 10px 0 10px 2px; border-bottom: 1px solid #D2D2D2;}
+.car-content .car-side .bd{padding: 15px 0;}
+.car-content .car-side .bd li{padding:  0 0 15px 0;}
+.car-content .car-side .bd li .sub-hd{width: 200px;height: 150px;overflow: hidden;}
+.car-content .car-side .bd li .sub-hd img{width: 200px;height: 150px;}
+.car-content .car-side .bd li .sub-bd{padding: 8px 0;}
+.car-content .car-side .bd li .sub-bd h4{font-size: 14px; padding: 4px 0;}
+.car-content .car-side .bd li .sub-bd p{font-size: 13px; padding: 4px 0; color: #787878;}

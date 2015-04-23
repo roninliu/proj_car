@@ -10,7 +10,7 @@
 .quick .quick-bd{padding:20px;border-bottom:1px solid #d2d2d2;background:#f9f9f9;}
 .quick .quick-bd li{padding:5px 0;}
 .quick .quick-bd li label{font-size:14px;margin-right:8px;}
-.quick .quick-bd li input{line-height:22px;width:160px;height:22px;border:1px solid #ccc;}
+.quick .quick-bd li input{line-height:22px;width:155px;height:20px;border:1px solid #ccc; padding: 1px 4px 1px 5px;}
 .quick .quick-ft{width:250px;height:100px;padding:10px 20px;background:url(../images/y-bg.png);}
 .select-btn{display:inline-block;zoom:1;padding:8px 15px;color:#fff;background:#3671ba; border: none;}
 .select-btn:hover{text-decoration:none;background:#447dc2;}

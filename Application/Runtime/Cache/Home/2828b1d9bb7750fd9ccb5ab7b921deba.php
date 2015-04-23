@@ -50,7 +50,7 @@
 	<div class="car-main">
 		<div class="filter">
 			<ul>
-				<li>
+				<li class="time-area">
 					<label for="">取车地点：
 						<select name="" id="">
 							<option value="0">---请选择取车地点---</option>
@@ -67,8 +67,19 @@
 					</label>
 				</li>
 				<li>
-					<label>筛选：</label>
-					<label for=""><input type="checkbox" />自动档</label>
+					<label>排   档：</label>
+					<label for=""><input type="checkbox" />手动</label>
+					<label for=""><input type="checkbox" />自动</label>
+					<label for=""><input type="checkbox"  checked="checked"/>全部</label>
+				</li>
+				<li>
+					<label>座位数：</label>
+					<label for=""><input type="checkbox" />5座</label>
+					<label for=""><input type="checkbox" />7座</label>
+					<label for=""><input type="checkbox" checked="checked" />全部</label>
+				</li>
+				<li>
+					<a href="#" class="comfirm-btn">确定</a>
 				</li>
 			</ul>
 		</div>
@@ -86,7 +97,7 @@
 						<p class="old-price">￥290.00元</p>
 					</div>
 					<div class="order">
-						<a href="" class="order">预订</a>
+						<a href="" class="comfirm-btn">预订</a>
 					</div>
 				</li>
 				<li>
@@ -101,13 +112,37 @@
 						<p class="old-price">￥290.00元</p>
 					</div>
 					<div class="order">
-						<a href="" class="order">预订</a>
+						<a href="" class="comfirm-btn">预订</a>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<div class="car-side">111111</div>
+	<div class="car-side">
+		<div class="hd">门店介绍</div>
+		<div class="bd">
+			<ul>
+				<li>
+					<div class="sub-hd"><img src="http://fakeimg.pl/200x150/?text=Hot%20Image"></div>
+					<div class="sub-bd">
+						<h4>九寨沟</h4>
+						<p>地址:xxxxxx</p>
+						<p>电话:xxxxx</p>
+						<p>营业时间:8:00-10:00</p>
+					</div>
+				</li>
+				<li>
+					<div class="sub-hd"><img src="http://fakeimg.pl/200x150/?text=Hot%20Image"></div>
+					<div class="sub-bd">
+						<h4>九寨沟</h4>
+						<p>地址:xxxxxx</p>
+						<p>电话:xxxxx</p>
+						<p>营业时间:8:00-10:00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
 
 <script>
