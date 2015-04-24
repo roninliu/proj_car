@@ -2,6 +2,11 @@
  *	index模块
  */
 define(function(require, exports, module) {
+	
+	var initSelectHandler = function(element,eIndex){
+		element.val(eIndex);
+	}
+	
 	var initDatePicker = function() {
 		$("#getdatepicker").datepicker({
 			showOn: "button",
@@ -49,6 +54,10 @@ define(function(require, exports, module) {
 	 */
 
 	exports.init = function() {
+		var eSelect = $("#jsaddress");
+		if(eSelect.attr("value") != ""){
+			initSelectHandler(eSelect,eSelect.attr("value"));
+		}
 		initDatePicker();
 	}
 })

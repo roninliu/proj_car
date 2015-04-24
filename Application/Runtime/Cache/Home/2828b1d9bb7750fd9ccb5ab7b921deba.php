@@ -52,7 +52,7 @@
 			<ul>
 				<li class="time-area">
 					<label for="">取车地点：
-						<select name="" id="">
+						<select name="address" id="jsaddress" value="<?php echo ($baseData["address"]); ?>">
 							<option value="0">---请选择取车地点---</option>
 							<option value="1">九寨沟机场</option>
 							<option value="2">红原机场</option>
@@ -60,23 +60,23 @@
 						</select>
 					</label>
 					<label for="">取车时间：
-						<input type="text" id="getdatepicker" class="data-ipt" placeholder="请选择取车时间"/>
+						<input type="text" id="getdatepicker" name="start" class="data-ipt" value="<?php echo ($baseData["start"]); ?>" placeholder="请选择取车时间"/>
 					</label>
 					<label for="">还车时间：
-						<input type="text" id="overdatepicker" class="data-ipt" placeholder="请选择还车时间"/>
+						<input type="text" id="overdatepicker" name="end" class="data-ipt" value="<?php echo ($baseData["end"]); ?>" placeholder="请选择还车时间"/>
 					</label>
 				</li>
 				<li>
-					<label>排   档：</label>
-					<label for=""><input type="checkbox" />手动</label>
-					<label for=""><input type="checkbox" />自动</label>
-					<label for=""><input type="checkbox"  checked="checked"/>全部</label>
+					<label>排档：</label>
+					<label for=""><input type="checkbox"  checked="checked"/> 全部</label>
+					<label for=""><input type="checkbox" /> 手动</label>
+					<label for=""><input type="checkbox" /> 自动</label>
 				</li>
 				<li>
-					<label>座位数：</label>
-					<label for=""><input type="checkbox" />5座</label>
-					<label for=""><input type="checkbox" />7座</label>
-					<label for=""><input type="checkbox" checked="checked" />全部</label>
+					<label>座数：</label>
+					<label for=""><input type="checkbox" checked="checked" /> 全部</label>
+					<label for=""><input type="checkbox" /> 5座</label>
+					<label for=""><input type="checkbox" /> 7座</label>
 				</li>
 				<li>
 					<a href="#" class="comfirm-btn">确定</a>
