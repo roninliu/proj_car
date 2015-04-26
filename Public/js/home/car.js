@@ -2,9 +2,63 @@
  *	index模块
  */
 define(function(require, exports, module) {
+	var config = require('./config');
 	
 	var initSelectHandler = function(element,eIndex){
 		element.val(eIndex);
+	}
+	
+	var queryCarsByType = function(g,s){
+		var obj = {
+			gear:$(g).val(),
+			seat:$(s).val()
+		}
+		$.ajax({
+			url:config.BASE_URL+"cars/getFilter",
+			data:obj,
+			type:"GET",
+			success:function(result){
+				console.log(result);
+				
+				if(result!=null){
+					$("#jcars").find("li").remove();
+					returnCarsTemplate(result,function(data){
+						console.log(data);
+					});
+				}else{
+					
+				}
+			}
+		})
+	}
+	
+	
+	var returnCarsTemplate = function(data,callback){
+		console.log(data);
+		var templatestr = "1";
+		for(var i=0;i<data.length;i++){
+			var item = data[i];
+			
+			templatestr += '<li>';
+			templatestr += '<div class="car-img"><a href="" data-id="'+item.id+'"><img src="'+item.img+'"/></a></div>';
+			templatestr += '<div class="car-info">';
+			templatestr += '<p class="car-name">'+item.brand+' —— '+item.cars+'</p>';
+			templatestr += '<p class="car-desc">'+item.discharge+' | '+item.transmission+' | '+item.seat_number+'座</p>';
+			templatestr += '<p class="car-desc">取车门店：'+item.stock_name+'</p>';
+			templatestr += '</div>';
+			templatestr += '<div class="car-price">';
+			templatestr += '<p class="new-price">￥'+item.n_price+'元</p>';
+			templatestr += '<p class="old-price">￥'+item.o_price+'元</p>';
+			templatestr += '</div>';
+			templatestr += '<div class="order">';
+			templatestr += '<a href="" data-id="'+item.id+'" class="comfirm-btn">预订</a>';
+			templatestr += '</div>';
+			templatestr += '</li>';
+			
+		}
+		console.log(templatestr);
+		callback(templatestr);
+		//return templatestr;
 	}
 	
 	var initDatePicker = function() {
@@ -47,7 +101,8 @@ define(function(require, exports, module) {
 		};
 		$.datepicker.setDefaults($.datepicker.regional['zh-CN']);
 	});
-
+	
+	
 	/**
 	 * [init 初始化方法]
 	 * 注册相关事件
@@ -58,6 +113,12 @@ define(function(require, exports, module) {
 		if(eSelect.attr("value") != ""){
 			initSelectHandler(eSelect,eSelect.attr("value"));
 		}
+		var eQuery = $("#query");
+		eQuery.click(function(){
+			var gears = $("input[name='gears']:checked");
+			var seats = $("input[name='seats']:checked");
+			queryCarsByType(gears,seats);
+		})
 		initDatePicker();
 	}
 })

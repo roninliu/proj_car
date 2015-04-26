@@ -1,0 +1,1071 @@
+[ 2015-04-25T12:58:12+08:00 ] ::1 /proj_car/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.1200s ]
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `about` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0285s ]
+SQL: SELECT * FROM `about` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+SQL: SELECT c.name,n.id, n.title, n.img,n.content,n.c_id,c.parent FROM news n, category c WHERE n.c_id = c.id AND n.is_hot = 1 ORDER BY n.id DESC LIMIT 0,5 [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `travel` [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `travel` [ RunTime:0.0014s ]
+SQL: SELECT t.id, t.title,t.img,c.name ,t.content,t.c_id,c.parent FROM travel t, category as c WHERE c.id = t.c_id and t.is_hot =1 ORDER BY t.id DESC LIMIT 0 ,5 [ RunTime:0.0113s ]
+SQL: SELECT t.id,	t.title, t.img, 	t.c_id, 	c.parent FROM travel t, category c WHERE c.id=t.c_id and c.parent = 3 and t.c_id = 14 and t.is_hot = 1 ORDER BY t.id DESC LIMIT 0 ,4 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2015-04-25T13:09:50+08:00 ] ::1 /proj_car/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `about` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `about` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0017s ]
+SQL: SELECT c.name,n.id, n.title, n.img,n.content,n.c_id,c.parent FROM news n, category c WHERE n.c_id = c.id AND n.is_hot = 1 ORDER BY n.id DESC LIMIT 0,5 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `travel` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `travel` [ RunTime:0.0014s ]
+SQL: SELECT t.id, t.title,t.img,c.name ,t.content,t.c_id,c.parent FROM travel t, category as c WHERE c.id = t.c_id and t.is_hot =1 ORDER BY t.id DESC LIMIT 0 ,5 [ RunTime:0.0003s ]
+SQL: SELECT t.id,	t.title, t.img, 	t.c_id, 	c.parent FROM travel t, category c WHERE c.id=t.c_id and c.parent = 3 and t.c_id = 14 and t.is_hot = 1 ORDER BY t.id DESC LIMIT 0 ,4 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2015-04-25T13:09:51+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+
+[ 2015-04-25T13:24:53+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012788s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+NOTIC: [8] Undefined variable: baseData /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 55 行.
+NOTIC: [8] Undefined variable: baseData /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 63 行.
+NOTIC: [8] Undefined variable: baseData /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001050s ]
+
+[ 2015-04-25T13:24:54+08:00 ] ::1 /proj_car/index.php/cars/Ifavicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+
+[ 2015-04-25T13:24:54+08:00 ] ::1 /proj_car/index.php/cars/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+
+[ 2015-04-25T13:28:13+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+NOTIC: [8] Undefined variable: baseData /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 55 行.
+NOTIC: [8] Undefined variable: baseData /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 63 行.
+NOTIC: [8] Undefined variable: baseData /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2015-04-25T13:28:24+08:00 ] ::1 /proj_car/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0348s ]
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `about` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `about` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0017s ]
+SQL: SELECT c.name,n.id, n.title, n.img,n.content,n.c_id,c.parent FROM news n, category c WHERE n.c_id = c.id AND n.is_hot = 1 ORDER BY n.id DESC LIMIT 0,5 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `travel` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `travel` [ RunTime:0.0014s ]
+SQL: SELECT t.id, t.title,t.img,c.name ,t.content,t.c_id,c.parent FROM travel t, category as c WHERE c.id = t.c_id and t.is_hot =1 ORDER BY t.id DESC LIMIT 0 ,5 [ RunTime:0.0003s ]
+SQL: SELECT t.id,	t.title, t.img, 	t.c_id, 	c.parent FROM travel t, category c WHERE c.id=t.c_id and c.parent = 3 and t.c_id = 14 and t.is_hot = 1 ORDER BY t.id DESC LIMIT 0 ,4 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2015-04-25T13:28:27+08:00 ] ::1 /proj_car/index.php/cars/selectcars
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0754s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2015-04-25T13:29:19+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2015-04-25T13:31:02+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2015-04-25T13:32:21+08:00 ] ::1 /proj_car/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `about` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `about` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+SQL: SELECT c.name,n.id, n.title, n.img,n.content,n.c_id,c.parent FROM news n, category c WHERE n.c_id = c.id AND n.is_hot = 1 ORDER BY n.id DESC LIMIT 0,5 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `travel` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `travel` [ RunTime:0.0015s ]
+SQL: SELECT t.id, t.title,t.img,c.name ,t.content,t.c_id,c.parent FROM travel t, category as c WHERE c.id = t.c_id and t.is_hot =1 ORDER BY t.id DESC LIMIT 0 ,5 [ RunTime:0.0003s ]
+SQL: SELECT t.id,	t.title, t.img, 	t.c_id, 	c.parent FROM travel t, category c WHERE c.id=t.c_id and c.parent = 3 and t.c_id = 14 and t.is_hot = 1 ORDER BY t.id DESC LIMIT 0 ,4 [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2015-04-25T13:32:24+08:00 ] ::1 /proj_car/index.php/cars/selectcars
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2015-04-25T13:36:23+08:00 ] ::1 /proj_car/index.php/cars/selectcars
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2015-04-25T13:36:44+08:00 ] ::1 /proj_car/index.php/cars/selectcars
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2015-04-25T13:36:46+08:00 ] ::1 /proj_car/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `about` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `about` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0012s ]
+SQL: SELECT c.name,n.id, n.title, n.img,n.content,n.c_id,c.parent FROM news n, category c WHERE n.c_id = c.id AND n.is_hot = 1 ORDER BY n.id DESC LIMIT 0,5 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `travel` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `travel` [ RunTime:0.0014s ]
+SQL: SELECT t.id, t.title,t.img,c.name ,t.content,t.c_id,c.parent FROM travel t, category as c WHERE c.id = t.c_id and t.is_hot =1 ORDER BY t.id DESC LIMIT 0 ,5 [ RunTime:0.0003s ]
+SQL: SELECT t.id,	t.title, t.img, 	t.c_id, 	c.parent FROM travel t, category c WHERE c.id=t.c_id and c.parent = 3 and t.c_id = 14 and t.is_hot = 1 ORDER BY t.id DESC LIMIT 0 ,4 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2015-04-25T13:37:04+08:00 ] ::1 /proj_car/index.php/cars/selectcars
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0473s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2015-04-25T13:37:15+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2015-04-25T13:41:14+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012456s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.1110s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/ronin/workspace/php/proj_car/ThinkPHP/Common/functions.php:848) /Users/ronin/workspace/php/proj_car/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/ronin/workspace/php/proj_car/ThinkPHP/Common/functions.php:848) /Users/ronin/workspace/php/proj_car/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/ronin/workspace/php/proj_car/ThinkPHP/Common/functions.php:848) /Users/ronin/workspace/php/proj_car/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2015-04-25T13:41:38+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2015-04-25T13:41:57+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001176s ]
+
+[ 2015-04-25T13:45:32+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/ronin/workspace/php/proj_car/ThinkPHP/Common/functions.php:848) /Users/ronin/workspace/php/proj_car/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/ronin/workspace/php/proj_car/ThinkPHP/Common/functions.php:848) /Users/ronin/workspace/php/proj_car/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/ronin/workspace/php/proj_car/ThinkPHP/Common/functions.php:848) /Users/ronin/workspace/php/proj_car/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2015-04-25T13:47:43+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2015-04-25T13:48:09+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+NOTIC: [8] Undefined index: brand /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [8] Undefined index: cars /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [2] Illegal string offset 'brand' /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [2] Illegal string offset 'cars' /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2015-04-25T14:02:21+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+NOTIC: [8] Undefined index: brand /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [8] Undefined index: cars /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [2] Illegal string offset 'brand' /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [2] Illegal string offset 'cars' /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2015-04-25T14:02:39+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+NOTIC: [8] Undefined index: brand /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [8] Undefined index: cars /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [2] Illegal string offset 'brand' /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [2] Illegal string offset 'cars' /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/ronin/workspace/php/proj_car/ThinkPHP/Common/functions.php:848) /Users/ronin/workspace/php/proj_car/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/ronin/workspace/php/proj_car/ThinkPHP/Common/functions.php:848) /Users/ronin/workspace/php/proj_car/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/ronin/workspace/php/proj_car/ThinkPHP/Common/functions.php:848) /Users/ronin/workspace/php/proj_car/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2015-04-25T14:05:08+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+NOTIC: [8] Undefined index: brand /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [8] Undefined index: cars /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [8] Undefined index: discharge /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 92 行.
+NOTIC: [8] Undefined index: transmission /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 92 行.
+NOTIC: [8] Undefined index: seat_number /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 92 行.
+NOTIC: [2] Illegal string offset 'brand' /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [2] Illegal string offset 'cars' /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 91 行.
+NOTIC: [2] Illegal string offset 'discharge' /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 92 行.
+NOTIC: [2] Illegal string offset 'transmission' /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 92 行.
+NOTIC: [2] Illegal string offset 'seat_number' /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2015-04-25T14:05:36+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2015-04-25T14:05:59+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cars` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2015-04-25T15:24:40+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+
+[ 2015-04-25T15:25:02+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0014s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2015-04-25T15:47:16+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+
+[ 2015-04-25T15:47:35+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0355s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0014s ]
+NOTIC: [2] Illegal string offset 'data' /Users/ronin/workspace/php/proj_car/Application/Home/Controller/CarsController.class.php 第 27 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2015-04-25T15:52:21+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0023s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2015-04-25T15:53:56+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0356s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0021s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021911s ]
+
+[ 2015-04-25T15:57:03+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0352s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0018s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2015-04-25T16:06:58+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0246s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0020s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2015-04-25T16:07:25+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0025s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2015-04-25T16:08:56+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0347s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0018s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001140s ]
+
+[ 2015-04-25T16:09:32+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0278s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0020s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2015-04-25T16:11:31+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0347s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0016s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2015-04-25T16:12:31+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0242s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0018s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001075s ]
+
+[ 2015-04-25T16:13:10+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0018s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2015-04-25T16:14:28+08:00 ] ::1 /proj_car/index.php/cars/index?menu=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0364s ]
+SQL: SHOW COLUMNS FROM `cars` [ RunTime:0.0023s ]
+SQL: SELECT ci.img,c.id,c.brand,c.cars,c.seat_number,c.transmission,c.discharge,p.o_price,p.n_price,s.stock_name FROM car_img ci, cars c, price p, stock s WHERE ci.c_id = c.id AND p.c_id = c.id and s.c_id = c.id ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cars` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: page /Users/ronin/workspace/php/proj_car/Application/Runtime/Cache/Home/2828b1d9bb7750fd9ccb5ab7b921deba.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+

@@ -21,53 +21,40 @@
 				</li>
 				<li>
 					<label>排档：</label>
-					<label for=""><input type="checkbox"  checked="checked"/> 全部</label>
-					<label for=""><input type="checkbox" /> 手动</label>
-					<label for=""><input type="checkbox" /> 自动</label>
+					<label for=""><input type="radio" name="gears"  checked="checked" value="0"/> 全部</label>
+					<label for=""><input type="radio" name="gears" value="AT"/> 手动</label>
+					<label for=""><input type="radio" name="gears" value="MT"/> 自动</label>
 				</li>
 				<li>
 					<label>座数：</label>
-					<label for=""><input type="checkbox" checked="checked" /> 全部</label>
-					<label for=""><input type="checkbox" /> 5座</label>
-					<label for=""><input type="checkbox" /> 7座</label>
+					<label for=""><input type="radio" checked="checked" name="seats" value="0"/> 全部</label>
+					<label for=""><input type="radio" name="seats" value="5"/> 5座</label>
+					<label for=""><input type="radio" name="seats" value="7"/> 7座</label>
 				</li>
 				<li>
-					<a href="#" class="comfirm-btn">确定</a>
+					<a href="javascript:;" class="comfirm-btn" id="query">确定</a>
 				</li>
 			</ul>
 		</div>
 		<div class="car-list">
-			<ul>
-				<li>
-					<div class="car-img"><a href=""><img src="http://fakeimg.pl/200x150/?text=Hot%20Image"/></a></div>
-					<div class="car-info">
-						<p class="car-name">大宗汽车</p>
-						<p class="car-desc">20T | 自动 | 7座</p>
-						<p class="car-desc">取车门店：九寨沟机场</p>
-					</div>
-					<div class="car-price">
-						<p class="new-price">￥190.00元</p>
-						<p class="old-price">￥290.00元</p>
-					</div>
-					<div class="order">
-						<a href="" class="comfirm-btn">预订</a>
-					</div>
-				</li>
-				<li>
-					<div class="car-img"><a href=""><img src="http://fakeimg.pl/200x150/?text=Hot%20Image"/></a></div>
-					<div class="car-info">
-						<p class="car-name">大宗汽车</p>
-						<p class="car-desc">20T | 自动 | 7座</p>
-						<p class="car-desc">取车门店：九寨沟机场</p>
-					</div>
-					<div class="car-price">
-						<p class="new-price">￥190.00元</p>
-						<p class="old-price">￥290.00元</p>
-					</div>
-					<div class="order">
-						<a href="" class="comfirm-btn">预订</a>
-					</div>
-				</li>
+			<ul id="jcars">
+				<volist name="data" id="item">
+					<li>
+						<div class="car-img"><a href="" data-id="{$item.id}"><img src="{$item.img}"/></a></div>
+						<div class="car-info">
+							<p class="car-name">{$item.brand} —— {$item.cars}</p>
+							<p class="car-desc">{$item.discharge} | {$item.transmission} | {$item.seat_number}座</p>
+							<p class="car-desc">取车门店：{$item.stock_name}</p>
+						</div>
+						<div class="car-price">
+							<p class="new-price">￥{$item.n_price}元</p>
+							<p class="old-price">￥{$item.o_price}元</p>
+						</div>
+						<div class="order">
+							<a href="" data-id="{$item.id}" class="comfirm-btn">预订</a>
+						</div>
+					</li>
+				</volist>
 			</ul>
 		</div>
 	</div>

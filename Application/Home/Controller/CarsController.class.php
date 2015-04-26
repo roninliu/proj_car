@@ -4,7 +4,8 @@ use Think\Controller;
 
 class CarsController extends Controller {
 	public function index() {
-		$this -> display("Cars/CarsList");	
+		$this-> selectCars();
+		//$this -> display("Cars/CarsList");	
 	}
 	public function selectCars(){
 		$baseMap = array(
@@ -13,12 +14,32 @@ class CarsController extends Controller {
 			'address' => I('address')
 		);
 		$filterMap = array(
-			''
-		)
+			'start' => intval(I("page_start")),
+			'step'=> 10,
+			'page' => intval(I('page')),
+			'gear' => I('gear'),
+			'seat' => I('seat')
+		);
+		//dump($filterMap);
 		$carsService = D("Cars","Service");
-		$carsService -> getCarsList($map);
+		$result = $carsService -> getCarsList($filterMap);
+		dump($result);
+		$this -> assign("data",$result["data"]);
 		$this-> assign("baseData",$baseMap);
 		$this -> display("Cars/CarsList");
+	}
+	
+	public function getFilter(){
+		$filterMap = array(
+			'start' => intval(I("page_start")),
+			'step'=> 10,
+			'page' => intval(I('page')),
+			'gear' => I('gear'),
+			'seat' => I('seat')
+		);
+		$carsService = D("Cars","Service");
+		$result = $carsService -> getCarsList($filterMap);
+		$this -> ajaxReturn($result);
 	}
 	
 }

@@ -68,53 +68,38 @@
 				</li>
 				<li>
 					<label>排档：</label>
-					<label for=""><input type="checkbox"  checked="checked"/> 全部</label>
-					<label for=""><input type="checkbox" /> 手动</label>
-					<label for=""><input type="checkbox" /> 自动</label>
+					<label for=""><input type="radio" name="gears"  checked="checked" value="0"/> 全部</label>
+					<label for=""><input type="radio" name="gears" value="AT"/> 手动</label>
+					<label for=""><input type="radio" name="gears" value="MT"/> 自动</label>
 				</li>
 				<li>
 					<label>座数：</label>
-					<label for=""><input type="checkbox" checked="checked" /> 全部</label>
-					<label for=""><input type="checkbox" /> 5座</label>
-					<label for=""><input type="checkbox" /> 7座</label>
+					<label for=""><input type="radio" checked="checked" name="seats" value="0"/> 全部</label>
+					<label for=""><input type="radio" name="seats" value="5"/> 5座</label>
+					<label for=""><input type="radio" name="seats" value="7"/> 7座</label>
 				</li>
 				<li>
-					<a href="#" class="comfirm-btn">确定</a>
+					<a href="javascript:;" class="comfirm-btn" id="query">确定</a>
 				</li>
 			</ul>
 		</div>
 		<div class="car-list">
-			<ul>
-				<li>
-					<div class="car-img"><a href=""><img src="http://fakeimg.pl/200x150/?text=Hot%20Image"/></a></div>
-					<div class="car-info">
-						<p class="car-name">大宗汽车</p>
-						<p class="car-desc">20T | 自动 | 7座</p>
-						<p class="car-desc">取车门店：九寨沟机场</p>
-					</div>
-					<div class="car-price">
-						<p class="new-price">￥190.00元</p>
-						<p class="old-price">￥290.00元</p>
-					</div>
-					<div class="order">
-						<a href="" class="comfirm-btn">预订</a>
-					</div>
-				</li>
-				<li>
-					<div class="car-img"><a href=""><img src="http://fakeimg.pl/200x150/?text=Hot%20Image"/></a></div>
-					<div class="car-info">
-						<p class="car-name">大宗汽车</p>
-						<p class="car-desc">20T | 自动 | 7座</p>
-						<p class="car-desc">取车门店：九寨沟机场</p>
-					</div>
-					<div class="car-price">
-						<p class="new-price">￥190.00元</p>
-						<p class="old-price">￥290.00元</p>
-					</div>
-					<div class="order">
-						<a href="" class="comfirm-btn">预订</a>
-					</div>
-				</li>
+			<ul id="jcars">
+				<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><li>
+						<div class="car-img"><a href="" data-id="<?php echo ($item["id"]); ?>"><img src="<?php echo ($item["img"]); ?>"/></a></div>
+						<div class="car-info">
+							<p class="car-name"><?php echo ($item["brand"]); ?> —— <?php echo ($item["cars"]); ?></p>
+							<p class="car-desc"><?php echo ($item["discharge"]); ?> | <?php echo ($item["transmission"]); ?> | <?php echo ($item["seat_number"]); ?>座</p>
+							<p class="car-desc">取车门店：<?php echo ($item["stock_name"]); ?></p>
+						</div>
+						<div class="car-price">
+							<p class="new-price">￥<?php echo ($item["n_price"]); ?>元</p>
+							<p class="old-price">￥<?php echo ($item["o_price"]); ?>元</p>
+						</div>
+						<div class="order">
+							<a href="" data-id="<?php echo ($item["id"]); ?>" class="comfirm-btn">预订</a>
+						</div>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 		</div>
 	</div>

@@ -11,7 +11,7 @@
  Target Server Version : 50623
  File Encoding         : utf-8
 
- Date: 04/24/2015 15:31:24 PM
+ Date: 04/26/2015 23:11:38 PM
 */
 
 SET NAMES utf8;
@@ -44,6 +44,13 @@ CREATE TABLE `cars` (
   `cd` varchar(255) NOT NULL,
   `gps` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+--  Records of `cars`
+-- ----------------------------
+BEGIN;
+INSERT INTO `cars` VALUES ('1', '3dsfsdfs', 'adasdas', 'adasdasd', 'adasd', '1', '3', 'dasdad', 'asdasdad', 'dasdfs', 'sdsdfsdf', 'sdfsdf', 'afdfsdf', 'dfsdfsdf', 'sdffsd', '5', '3sds', 'sd', 'sdad', 'asdasd', 'sadadf'), ('2', 'asdfsfdgbhrh', 'sfsdfsd', 'ffwfvv', 'edasd', '5', '4', 'eddsd', 'dfsdfvfds', 'fsfdrwrf', 'dasasasd', 'efsffsf', 'sffgd', 'fddssss', 'dddddd', '5', 'sd', 'sd', 'asdafasd', 'dasdad', 'dasdad'), ('3', '别克', '凯越', '2014', '豪华版', '5', '4', '汽油', 'AT', '1.6T', '93汽油', '前驱', '自然吸气', '全景天窗', '60L', '6', '真皮座椅', '有', '4', 'CD', '无');
+COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
