@@ -76,7 +76,7 @@
 					</if>
 					{$newsItem.title}</a>
 					</li>
-		</volist>
+				</volist>
 		</ul>
 		</div>
 		</div>
@@ -107,7 +107,7 @@
 						<a href="__ROOT__/index.php/travel/getcontent?menu={$hotItem.parent}&sub={$hotItem.c_id}&page={$hotItem.id}">
 							<img src="{$hotItem.img}" alt="{$hotItem.title}">
 						</a>
-						<a href="">{$hotItem.title}</a>
+						<a href="__ROOT__/index.php/travel/getcontent?menu={$hotItem.parent}&sub={$hotItem.c_id}&page={$hotItem.id}">{$hotItem.title}</a>
 					</li>
 				</volist>
 			</ul>
