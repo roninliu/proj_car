@@ -1,24 +1,22 @@
 /*
- Navicat Premium Data Transfer
+Navicat MySQL Data Transfer
 
- Source Server         : localhost
- Source Server Type    : MySQL
- Source Server Version : 50623
- Source Host           : localhost
- Source Database       : proj_car
+Source Server         : 本地链接
+Source Server Version : 50624
+Source Host           : localhost:3306
+Source Database       : proj_car
 
- Target Server Type    : MySQL
- Target Server Version : 50623
- File Encoding         : utf-8
+Target Server Type    : MYSQL
+Target Server Version : 50624
+File Encoding         : 65001
 
- Date: 04/26/2015 23:11:31 PM
+Date: 2015-04-29 18:42:48
 */
 
-SET NAMES utf8;
-SET FOREIGN_KEY_CHECKS = 0;
+SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
---  Table structure for `car_img`
+-- Table structure for car_img
 -- ----------------------------
 DROP TABLE IF EXISTS `car_img`;
 CREATE TABLE `car_img` (
@@ -29,10 +27,8 @@ CREATE TABLE `car_img` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
---  Records of `car_img`
+-- Records of car_img
 -- ----------------------------
-BEGIN;
-INSERT INTO `car_img` VALUES ('1', 'http://image.zuchecdn.com/newversion/mode/4_a.jpg', '1'), ('2', 'http://image.zuchecdn.com/newversion/mode/4_a.jpg', '2'), ('3', 'http://image.zuchecdn.com/newversion/mode/4_a.jpg', '3');
-COMMIT;
-
-SET FOREIGN_KEY_CHECKS = 1;
+INSERT INTO `car_img` VALUES ('1', 'http://image.zuchecdn.com/newversion/mode/4_a.jpg', '1');
+INSERT INTO `car_img` VALUES ('2', 'http://image.zuchecdn.com/newversion/mode/4_a.jpg', '2');
+INSERT INTO `car_img` VALUES ('3', 'http://image.zuchecdn.com/newversion/mode/4_a.jpg', '3');

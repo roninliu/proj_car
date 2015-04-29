@@ -89,7 +89,7 @@
 					<li>
 						<div class="ly-hot">
 							<a href="__ROOT__/index.php/about/index?menu=5&sub={$tsItem.c_id}">
-								<img src="{$tsItem.img}">
+								<img src="__ROOT__/{$tsItem.img}">
 							</a>
 							<a href="__ROOT__/index.php/about/index?menu=5&sub={$tsItem.c_id}" class="hot-name">{$tsItem.title}</a>
 						</div>

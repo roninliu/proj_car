@@ -1,24 +1,22 @@
 /*
- Navicat Premium Data Transfer
+Navicat MySQL Data Transfer
 
- Source Server         : localhost
- Source Server Type    : MySQL
- Source Server Version : 50623
- Source Host           : localhost
- Source Database       : proj_car
+Source Server         : 本地链接
+Source Server Version : 50624
+Source Host           : localhost:3306
+Source Database       : proj_car
 
- Target Server Type    : MySQL
- Target Server Version : 50623
- File Encoding         : utf-8
+Target Server Type    : MYSQL
+Target Server Version : 50624
+File Encoding         : 65001
 
- Date: 04/26/2015 23:12:00 PM
+Date: 2015-04-29 18:43:15
 */
 
-SET NAMES utf8;
-SET FOREIGN_KEY_CHECKS = 0;
+SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
---  Table structure for `price`
+-- Table structure for price
 -- ----------------------------
 DROP TABLE IF EXISTS `price`;
 CREATE TABLE `price` (
@@ -30,10 +28,8 @@ CREATE TABLE `price` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
---  Records of `price`
+-- Records of price
 -- ----------------------------
-BEGIN;
-INSERT INTO `price` VALUES ('1', '1', '299.00', '199.00'), ('2', '2', '1900.00', '450.00'), ('3', '3', '4334.00', '242.00');
-COMMIT;
-
-SET FOREIGN_KEY_CHECKS = 1;
+INSERT INTO `price` VALUES ('1', '1', '299.00', '199.00');
+INSERT INTO `price` VALUES ('2', '2', '1900.00', '450.00');
+INSERT INTO `price` VALUES ('3', '3', '4334.00', '242.00');
