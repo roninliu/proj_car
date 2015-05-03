@@ -33,7 +33,7 @@
 		<div class="banner">
 			<div class="inner">
 				<div class="banner-img">
-					<img src="__ROOT__/Public/images/001.jpg" alt="">
+					<img src="__ROOT__/Public/images/1001.png" alt="">
 				</div>
 			</div>
 			<div class="line">

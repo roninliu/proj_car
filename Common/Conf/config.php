@@ -4,7 +4,7 @@ return array(
 	'URL_CASE_INSENSITIVE' => true, //url大小写过滤
 	'SESSION_AUTO_START' => true, //是否开启session
 	'URL_MODEL' => '2', //URL模式
-	'TMPL_TEMPLATE_SUFFIX'=>'.tpl',
+	'TMPL_TEMPLATE_SUFFIX' => '.tpl',
 
 	//数据库配置信息
 	'DB_TYPE' => 'mysql', // 数据库类型

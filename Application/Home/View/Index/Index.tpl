@@ -28,7 +28,7 @@
 		</form>
 	</div>
 	<div class="quick-ft">
-		<img src="http://fakeimg.pl/250x100/?text=Hot Image">
+		<img src="__ROOT__/Public/images/006.png">
 	</div>
 </div>
 <div class="news">

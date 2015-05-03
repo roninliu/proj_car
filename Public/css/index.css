@@ -12,6 +12,7 @@
 .quick .quick-bd li label{font-size:14px;margin-right:8px;}
 .quick .quick-bd li input{line-height:22px;width:155px;height:20px;border:1px solid #ccc; padding: 1px 4px 1px 5px;}
 .quick .quick-ft{width:250px;height:100px;padding:10px 20px;background:url(../images/y-bg.png);}
+.quick .quick-ft img{border: 1px solid #ddd;}
 .select-btn{display:inline-block;zoom:1;padding:8px 15px;color:#fff;background:#3671ba; border: none;}
 .select-btn:hover{text-decoration:none;background:#447dc2;}
 .news{float:left;width:500px;height:362px;margin-top:30px;margin-left:30px;}

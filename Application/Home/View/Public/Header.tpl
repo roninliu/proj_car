@@ -38,7 +38,10 @@
 						<img src="__ROOT__/Public/images/001.jpg" alt="">
 					</li>
 					<li>
-						<img src="__ROOT__/Public/images/002.jpg" alt="">
+						<img src="__ROOT__/Public/images/002.png" alt="">
+					</li>
+					<li>
+						<img src="__ROOT__/Public/images/003.png" alt="">
 					</li>
 					<li>
 						<img src="__ROOT__/Public/images/004.jpg" alt="">

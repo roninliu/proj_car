@@ -41,7 +41,7 @@ a{color: #3671BA;}
 .banner .line .line-4{width:40%;background-color:#f60200;}
 .banner .line p{height:70px;background:url(../images/welcome.png) no-repeat center center;}
 
-.sub .banner .banner-img{height: 360px; overflow: hidden;}
+.sub .banner .banner-img{height: 360px; overflow: hidden; text-align: center;}
 
 .container .inner{width:1200px;margin:0 auto;}
 

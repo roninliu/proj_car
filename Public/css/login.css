@@ -3,7 +3,7 @@
  * 
  */
 
-@import url(framework.import.css);
+@import url(admin.framework.import.css);
 
 body{background: #4d7496;}
 .login-panel{width: 340px;height: 200px; background:#ffffff;border-bottom:4px solid #ccc; margin: 0 auto; padding: 20px;}
